@@ -21,12 +21,10 @@ For example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a
 **orders_.xml**: \
 For each layout and different possibilities of orders: \
 ItemDescription means the item description with color, ID, letter and weight. \
-Orders means all orders, and every items in an order (the count of a single itme and ID of this item). 
+Orders means all orders, and every items in an order (the count of a single itme and ID of this item). \
 
-
-**pods_items_dedicated*.xml**: \
-**pods_items_mixed_shevels*.xml**: \
-the information about the pods contain the items.
+ **pods_items_dedicated.xml and pods_items_mixed_shevels.xml**: \
+ the information about the pods contain the items.
 
 For **distances data** in distances folder: \
 The json format data for distances between pods or station to pods or station to station. The distances json files of the 3240 layouts are very large, so we zip the data, if using of these data please unzip the files.

@@ -1,31 +1,17 @@
-# rafs-datasets
-Datasets for RAFS paper: Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses
+Datasets for the paper: Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses
 
-There are four folders, distance, sku24, sku360, sku3240. sku24 means layout with 24 pods, sku360 means layout with 360 pods, sku3240 means layout with 3240 pods. In the distances folder gives the json format files for every layout.
+There are four folders in datasets, including distances, sku24, sku360, sku3240. The folder distances include the distance of each two locations (including depot/output station, picking location and shelves/pod) in a json-file, e.g. layout_sku_3240_8.json. In this file, the distance information within the layout of 3240 shelves and 8 depots are shown. The folder sku 24 include following files of the layout with 24 pods (same for the 360 and 3240 pods): 
 
-**layout_xx.xml**: \
-Pods position, Robot beginning position, Stations position, Waypoint etc. \
-•	N X tier \
-•	N X pick station \
-•	N X robots \
-•	N X pods
+**layout_sku_24_2.xml** includes all waypoints of the layout of 24 pods and 2 output stations and the path between two waypoints. Furthermore, it also includes the coordinate positions of picking locations (ID, x- and y-coordinates), pod locations, output stations location and the beginning location of cobot / bot. Note that there are more information as needed as listed in this file for further research. 
 
-**pods_infos.txt**: \
-For example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6; \
-•	184 means pod number. \
-•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. \
-•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
+**orders_10_mean_1x6_sku_24.xml** include the information of 10 orders with average 1.6 order lines (small-line orders) in a layout with 24 pods. We have a, b, and none at the end of each xml, which represent three different order sets. 1.6 can be replaced by 5 if we considered multi-line orders, i.e. average 5 order lines. \
+In each xml-file, we have ItemDescription, which shows the properties of items, including color, ID, letter and weight. Furthermore, we have Orders, including the order lines and items. 
 
-**orders_xx.xml**: \
-For each layout and different possibilities of orders: \
-ItemDescription means the item description with color, ID, letter and weight. \
-Orders means all orders, and every items in an order (the count of a single itme and ID of this item). \
+**pods_items_dedicated_1.xml** and **pods_items_mixed_shevels_1-x.xml** show the information of the distribution of SKUs per pod. Dedicated means that each pod includes only one SKU while mixed_shelves_x means that one SKU can be spread between 1 and x pods.
+Pod_ID; x-coorinate/y-coordinate; color/letter/count;…;
+For example:
+0;7.3500000000000005/0.65;red/c/16;green/d/19;blue/f/16;red/g/15;blue/h/31;
 
- **pods_items_dedicated.xml and pods_items_mixed_shevels.xml**: \
- the information about the pods contain the items, which is decdicated or mixed shevels.
-
-For **distances data** in distances folder: \
-The json format data for distances between pods or station to pods or station to station. The distances json files of the 3240 layouts are very large, so we zip the data, if using of these data please unzip the files.
 
 **24 pods with 2 stations layout**:
 ![layout](https://user-images.githubusercontent.com/61032543/162757138-cf804594-0423-4312-80a5-d41a87f0e340.png)

@@ -22,7 +22,7 @@ ItemDescription means the item description with color, ID, letter and weight. \
 Orders means all orders, and every items in an order (the count of a single itme and ID of this item). \
 
  **pods_items_dedicated.xml and pods_items_mixed_shevels.xml**: \
- the information about the pods contain the items.
+ the information about the pods contain the items, which is decdicated or mixed shevels.
 
 For **distances data** in distances folder: \
 The json format data for distances between pods or station to pods or station to station. The distances json files of the 3240 layouts are very large, so we zip the data, if using of these data please unzip the files.

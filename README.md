@@ -4,7 +4,7 @@ Datasets for RAFS paper: Formulating and solving integrated order batching and r
 There are four folders, distance, sku24, sku360, sku3240. sku24 means layout with 24 pods, sku360 means layout with 360 pods, sku3240 means layout with 3240 pods. In the distances folders gives the json format files for every layout.
 
 
-for layout*.xml: \
+layout*.xml: \
 Layout file: \
 Pods position, Robot beginning position, Stations position, Waypoint etc. \
 •	N X tier \
@@ -12,14 +12,23 @@ Pods position, Robot beginning position, Stations position, Waypoint etc. \
 •	N X robots \
 •	N X pods
 
-for pods_infos.txt: \
-for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6; \
+pods_infos.txt: \
+For example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6; \
 •	184 means pod number. \
 •	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. \
 •	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
 
-for distances data in distances folder: \
-json format data for distances between pods or station to pods or station to station.
+orders_.xml for each layout and different possibilties of : \
+ItemDescription means the item description with color, ID, letter and weight. \
+Orders means all orders, and every items in an order (the count of a single itme and ID of this item). 
+
+
+pods_items_dedicated*.xml \
+pods_items_mixed_shevels*.xml: \
+the information about the pods contain the items.
+
+For distances data in distances folder: \
+The json format data for distances between pods or station to pods or station to station. The distances json files of the 3240 layouts are very large, so we zip the data, if using of these data please unzip the files.
 
 
 

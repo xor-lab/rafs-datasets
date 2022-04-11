@@ -1,42 +1,27 @@
-# rafs-datasets
-Datasets for RAFS paper: Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses
+Datasets for the paper: _Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses_
 
-There are four folders, distance, sku24, sku360, sku3240. sku24 means layout with 24 pods, sku360 means layout with 360 pods, sku3240 means layout with 3240 pods. In the distances folders gives the json format files for every layout.
+There are four folders in _datasets_, including _distances, sku24, sku360, sku3240._ The folder _distances_ include the distance of each two locations (including depot/output station, picking location and shelves/pod) in a json-file, e.g. _layout_sku_3240_8.json_. In this file, the distance information within the layout of 3240 shelves and 8 depots are shown. The folder _sku 24_ include following files of the layout with 24 pods (same for the 360 and 3240 pods): 
 
+**layout_sku_24_2.xml** includes all waypoints of the layout of 24 pods and 2 output stations and the path between two waypoints. Furthermore, it also includes the coordinate positions of picking locations (ID, x- and y-coordinates), pod locations, output stations location and the beginning location of cobot / bot. Note that there are more information as needed as listed in this file for further research. 
 
-for layout*.xml:
-Layout file:
-Pods position, Robot beginning position, Stations position, Waypoint etc.
-•	N X tier
-•	N X pick station
-•	N X robots
-•	N X pods
+**orders_10_mean_1x6_sku_24.xml** include the information of 10 orders with average 1.6 order lines (small-line orders) in a layout with 24 pods. We have a, b, and none at the end of each xml, which represent three different order sets. 1.6 can be replaced by 5 if we considered multi-line orders, i.e. average 5 order lines. \
+In each xml-file, we have ItemDescription, which shows the properties of items, including color, ID, letter and weight. Furthermore, we have Orders, including the order lines and items. 
 
-for pods_infos.txt:
-for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6;
-•	184 means pod number.
-•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. 
-•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
-
-for distances data in distances folder:
-json format data for distances between pods or station to pods or station to station.
+**pods_items_dedicated_1.xml** and **pods_items_mixed_shevels_1-x.xml** show the information of the distribution of SKUs per pod. Dedicated means that each pod includes only one SKU while mixed_shelves_x means that one SKU can be spread between 1 and x pods.\
+_Pod_ID; x-coorinate/y-coordinate; color/letter/count;…;_\
+For example:
+0;7.3500000000000005/0.65;red/c/16;green/d/19;blue/f/16;red/g/15;blue/h/31;
 
 
-
-24 pods with 2 stations layout:
+**24 pods with 2 stations layout**:
 ![layout](https://user-images.githubusercontent.com/61032543/162757138-cf804594-0423-4312-80a5-d41a87f0e340.png)
-
-360 pods with 2 stations layout:
+**360 pods with 2 stations layout**:
 ![layout](https://user-images.githubusercontent.com/61032543/162757436-eeb2f9ff-4821-4460-9241-471952914ceb.png)
-
-360 pods with 4 stations layout:
+**360 pods with 4 stations layout**:
 ![layout - 4](https://user-images.githubusercontent.com/61032543/162757473-b960f27e-67af-4ffc-9358-f43bade3dda0.png)
-
-3240 pods with 2 stations layout:
+**3240 pods with 2 stations layout**:
 ![layout](https://user-images.githubusercontent.com/61032543/162757568-efb5eda0-f959-4ddb-a567-062c98c54b0d.png)
-
-3240 pods with 4 stations layout:
+**3240 pods with 4 stations layout**:
 ![layout_3240_4](https://user-images.githubusercontent.com/61032543/162757614-ea09a803-9884-42c6-ab28-afde02876863.png)
-
-3240 pods with 8 stations layout:
+**3240 pods with 8 stations layout**:
 ![layout_3240_8](https://user-images.githubusercontent.com/61032543/162757637-fbf4a6c1-40ef-45b0-8347-bacc05e56757.png)

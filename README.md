@@ -10,16 +10,16 @@ Pods position, Robot beginning position, Stations position, Waypoint etc. \
 •	N X tier \
 •	N X pick station \
 •	N X robots \
-•	N X pods \
+•	N X pods
 
 for pods_infos.txt: \
 for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6; \
 •	184 means pod number. \
-•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. \ 
-•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”. \
+•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. \
+•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
 
 for distances data in distances folder: \
-json format data for distances between pods or station to pods or station to station. \
+json format data for distances between pods or station to pods or station to station.
 
 
 

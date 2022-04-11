@@ -1,7 +1,7 @@
 # rafs-datasets
 Datasets for RAFS paper: Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses
 
-There are four folders, distance, sku24, sku360, sku3240. sku24 means layout with 24 pods, sku360 means layout with 360 pods, sku3240 means layout with 3240 pods. In the distances folders gives the json format files for every layout.
+There are four folders, distance, sku24, sku360, sku3240. sku24 means layout with 24 pods, sku360 means layout with 360 pods, sku3240 means layout with 3240 pods. In the distances folder gives the json format files for every layout.
 
 **layout_xx.xml**: \
 Pods position, Robot beginning position, Stations position, Waypoint etc. \

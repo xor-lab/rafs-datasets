@@ -7,10 +7,10 @@ There are four folders, distance, sku24, sku360, sku3240. sku24 means layout wit
 for layout*.xml:
 Layout file:
 Pods position, Robot beginning position, Stations position, Waypoint etc.
-•	N X tier
-•	N X pick station
-•	N X robots
-•	N X pods
+•	N X tier \newline
+•	N X pick station \newline
+•	N X robots \newline
+•	N X pods \newline
 
 for pods_infos.txt:
 for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6;

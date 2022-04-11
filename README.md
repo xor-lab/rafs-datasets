@@ -4,22 +4,22 @@ Datasets for RAFS paper: Formulating and solving integrated order batching and r
 There are four folders, distance, sku24, sku360, sku3240. sku24 means layout with 24 pods, sku360 means layout with 360 pods, sku3240 means layout with 3240 pods. In the distances folders gives the json format files for every layout.
 
 
-for layout*.xml:
-Layout file:
-Pods position, Robot beginning position, Stations position, Waypoint etc.
-•	N X tier \newline
-•	N X pick station \newline
-•	N X robots \newline
-•	N X pods \newline
+for layout*.xml: \
+Layout file: \
+Pods position, Robot beginning position, Stations position, Waypoint etc. \
+•	N X tier \
+•	N X pick station \
+•	N X robots \
+•	N X pods \
 
-for pods_infos.txt:
-for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6;
-•	184 means pod number.
-•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. 
-•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
+for pods_infos.txt: \
+for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6; \
+•	184 means pod number. \
+•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. \ 
+•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”. \
 
-for distances data in distances folder:
-json format data for distances between pods or station to pods or station to station.
+for distances data in distances folder: \
+json format data for distances between pods or station to pods or station to station. \
 
 
 

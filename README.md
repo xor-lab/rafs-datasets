@@ -19,13 +19,13 @@ For example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a
 •	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
 
 **orders_.xml**: \
-For each layout and different possibilties of orders: \
+For each layout and different possibilities of orders: \
 ItemDescription means the item description with color, ID, letter and weight. \
 Orders means all orders, and every items in an order (the count of a single itme and ID of this item). 
 
 
-**pods_items_dedicated*.xml \
-pods_items_mixed_shevels*.xml**: \
+**pods_items_dedicated*.xml**: \
+**pods_items_mixed_shevels*.xml**: \
 the information about the pods contain the items.
 
 For **distances data** in distances folder: \

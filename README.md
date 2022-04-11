@@ -1,7 +1,21 @@
 # rafs-datasets
-Datasets for RAFS paper
+Datasets for RAFS paper: Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses
 
-Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses
+for layout*.xml:
+Layout file:
+Pods position, Robot beginning position, Stations position, Waypoint etc.
+•	N X tier
+•	N X pick station 
+•	N X robots
+•	N X pods
+
+for pods_infos.txt:
+for example: 184;1.50/19.50;red/r/12;blue/i/6;blue/u/6;green/u/6;red/u/6;green/a/12;blue/m/6;green/m/6;red/m/18;red/s/6;
+•	184 means pod number.
+•	1.50/19.50 means the pod position, X: 1.50, Y: 19.50, origin of coordinate is in the bottom left corner. 
+•	blue/u/6 means there are 6 pieces for the item “character ‘u’ with blue color”.
+
+
 
 24 pods with 2 stations layout:
 ![layout](https://user-images.githubusercontent.com/61032543/162757138-cf804594-0423-4312-80a5-d41a87f0e340.png)

@@ -1,16 +1,21 @@
 Datasets for the paper: _Formulating and solving integrated order batching and routing in multi-depot AGV-assisted mixed-shelves warehouses_
 
-There are four folders in _datasets_, including _distances, sku24, sku360, sku3240._ The folder _distances_ include the distance of each two locations (including depot/output station, picking location and shelves/pod) in a json-file, e.g. _layout_sku_3240_8.json_. In this file, the distance information within the layout of 3240 shelves and 8 depots are shown. The folder _sku 24_ include following files of the layout with 24 pods (same for the 360 and 3240 pods): 
+There are four folders in datasets: _distances, sku24, sku360_ and _sku3240_. The _distances_ folder includes the distance between each pair of locations (including depot/output station, picking location and shelves/pod) in a JSON file, e.g. _layout_sku_3240_8.json_. In this file, the distance information within the layout of 3240 shelves and 8 depots is shown. The _sku24_ folder includes the following files for the layout with 24 pods (likewise for those with 360 and 3240 pods): 
 
-**layout_sku_24_2.xml** includes all waypoints of the layout of 24 pods and 2 output stations and the path between two waypoints. Furthermore, it also includes the coordinate positions of picking locations (ID, x- and y-coordinates), pod locations, output stations location and the beginning location of cobot / bot. Note that there are more information as needed as listed in this file for further research. 
+**layout_sku_24_2.xml** includes all waypoints of the layout with 24 pods and 2 output stations and the path between two waypoints. Furthermore, it also includes the coordinate positions of picking locations (ID, x- and y-coordinates), pod locations, output station locations and the beginning location of each cobot/bot. Note that this file contains more information that is needed for further research. 
 
-**orders_10_mean_1x6_sku_24.xml** include the information of 10 orders with average 1.6 order lines (small-line orders) in a layout with 24 pods. We have a, b, and none at the end of each xml, which represent three different order sets. 1.6 can be replaced by 5 if we considered multi-line orders, i.e. average 5 order lines. \
-In each xml-file, we have ItemDescription, which shows the properties of items, including color, ID, letter and weight. Furthermore, we have Orders, including the order lines and items. 
+**orders_10_mean_1x6_sku_24.xml** includes the information for 10 orders with an average of 1.6 order lines (small-line orders) in a layout with 24 pods. We have a, b and none at the end of each XML, which represent three different order sets. 1.6 can be replaced by 5 if we consider multi-line orders, i.e. an average of 5 order lines. 
 
-**pods_items_dedicated_1.xml** and **pods_items_mixed_shevels_1-x.xml** show the information of the distribution of SKUs per pod. Dedicated means that each pod includes only one SKU while mixed_shelves_x means that one SKU can be spread between 1 and x pods.\
-_Pod_ID; x-coorinate/y-coordinate; color/letter/count;…;_\
+In each XML file, we have _ItemDescription_, which shows the properties of items, including color, ID, letter and weight. Furthermore, we have _Orders_, including the order lines and items. 
+
+**pods_items_dedicated_1.xml** and **pods_items_mixed_shevels_1-x.xml** shows information about the distribution of SKUs per pod. _Dedicated_ means that each pod includes only one SKU, while _mixed_shelves_x_ means that one SKU can be spread between one and x pods.
+
+The data format ist:
+_Pod_ID; x-coordinate/y-coordinate; color/letter/count;…;_
+
 For example:
-0;7.3500000000000005/0.65;red/c/16;green/d/19;blue/f/16;red/g/15;blue/h/31;
+
+_0;7.3500000000000005/0.65;red/c/16;green/d/19;blue/f/16;red/g/15;blue/h/31;_ 
 
 
 **24 pods with 2 stations layout**:

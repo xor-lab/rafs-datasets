@@ -20,11 +20,11 @@ _0;7.3500000000000005/0.65;red/c/16;green/d/19;blue/f/16;red/g/15;blue/h/31;_
 
 **24 pods with 2 stations layout**:
 ![layout](https://user-images.githubusercontent.com/61032543/162757138-cf804594-0423-4312-80a5-d41a87f0e340.png)
-**24 pods with 1 stations layout**:
+**24 pods with 1 station layout**:
 ![layout_sku_24_1](https://user-images.githubusercontent.com/61032543/169673288-d6fc26c7-5c92-4d84-98dc-d2c0c02c1463.png)
 **360 pods with 2 stations layout**:
 ![layout](https://user-images.githubusercontent.com/61032543/162757436-eeb2f9ff-4821-4460-9241-471952914ceb.png)
-**360 pods with 1 stations layout**:
+**360 pods with 1 station layout**:
 ![layout_sku_360_1](https://user-images.githubusercontent.com/61032543/169673307-8bdb4e2f-0169-4f38-aa5a-9ca556ff72bb.png)
 **360 pods with 4 stations layout**:
 ![layout - 4](https://user-images.githubusercontent.com/61032543/162757473-b960f27e-67af-4ffc-9358-f43bade3dda0.png)
